@@ -40,6 +40,9 @@ nav ul {
 nav li {
 	float: left;
 }
+.cart {
+	float: right;
+}
 nav li a {
 	display: block;
 	color: white;
