@@ -7,7 +7,7 @@ html, body {
 	height: 100%;
 	color: white;
     align-self: center;
-    overflow: hidden; 
+    overflow: visible; 
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -55,4 +55,13 @@ nav li a:hover {
 }
 nav li a:active {
 	background-color: green;
+}
+
+p {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.card-title, .card-text, .display-4, .discrip {
+	color: black;
 }
