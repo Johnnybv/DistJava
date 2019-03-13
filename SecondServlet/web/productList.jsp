@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+
+<%@ page import="java.util.List" %>
+<%@ page import="edu.wctc.simple.Model.Products" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: John Erickson
+  Date: 3/13/2019
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,7 +25,7 @@
             <li><a href="index.jsp">Home</a></li>
             <li><a href="productList.jsp">Clothing Line</a></li>
             <li><a href="about.jsp">About Us</a></li>
-            <li class="cart"><a href="shoppingCart.jsp"><i class="fas fa-cart-arrow-down"></i></a></li>
+            <li class="cart"><a href="cart.go"><i class="fas fa-cart-arrow-down"></i></a></li>
         </ul>
 
     </nav>
@@ -25,48 +33,27 @@
 <main>
     <hr />
     <h2>Clothing Line</h2>
+    <form action="cartplace.go">
     <div class="container">
         <div class="row">
+            <%
+                List<Products> productList = (List<Products>) request.getAttribute("productList");
+                for (Products product : productList) {
+            %>
             <div class="card col-lg-4 col-m-3 col-sm-4">
                 <div class="card-body">
-                    <h5 class="card-title">Product 1</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="productDetail.jsp" class="card-link">Product Detail</a>
+                    <h5 class="card-title"><%= product.getpName() %> Price - $ <%= product.getPrice() %></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ID - <%= product.getpID() %></h6>
+                    <p class="card-text">Discription - <%= product.getDisc() %></p>
                     <a href="#" class="card-link">Add to Cart</a>
                 </div>
             </div>
-
-            <div class="card col-lg-4 col-m-3 col-sm-4">
-                <div class="card-body">
-                    <h5 class="card-title">Product 2</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="productDetail.jsp" class="card-link">Product Detail</a>
-                    <a href="#" class="card-link">Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-m-3 col-sm-4">
-                <div class="card-body">
-                    <h5 class="card-title">Product 3</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="productDetail.jsp" class="card-link">Product Detail</a>
-                    <a href="#" class="card-link">Add to Cart</a>
-                </div>
-            </div>
-
-            <div class="card col-lg-4 col-m-3 col-sm-4">
-                <div class="card-body">
-                    <h5 class="card-title">Product 4</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="productDetail.jsp" class="card-link">Product Detail</a>
-                    <a href="#" class="card-link">Add to Cart</a>
-                </div>
-            </div>
+            <%
+                }
+            %>
         </div>
+        <input type="submit" value="Purchase">
+    </form>
 </main>
 <footer>
 

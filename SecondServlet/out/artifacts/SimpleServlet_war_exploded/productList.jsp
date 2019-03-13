@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+
+<%@ page import="java.util.List" %>
+<%@ page import="edu.wctc.simple.Model.Products" %>
+<%--
+  Created by IntelliJ IDEA.
+  User: John Erickson
+  Date: 3/13/2019
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -17,21 +25,35 @@
             <li><a href="index.jsp">Home</a></li>
             <li><a href="productList.jsp">Clothing Line</a></li>
             <li><a href="about.jsp">About Us</a></li>
-            <li class="cart"><a href="shoppingCart.jsp"><i class="fas fa-cart-arrow-down"></i></a></li>
+            <li class="cart"><a href="cart.go"><i class="fas fa-cart-arrow-down"></i></a></li>
         </ul>
 
     </nav>
 </header>
 <main>
     <hr />
-    <h2>Product Details</h2>
-    <div class="jumbotron jumbotron-fluid">
-        <h1 class="display-4">Product #</h1>
-        <h3 class="discrip">Product Discription : </h3>
-        <p class="discrip">Integer eu tortor ut felis molestie finibus non et lacus. Aenean tortor turpis, pellentesque ac urna id, pretium fringilla sem. Quisque euismod eleifend libero, id consequat justo rutrum eget. Etiam et odio id metus sagittis placerat et eget orci. Duis at sollicitudin leo. Vestibulum justo augue, sollicitudin et metus et, consequat consequat augue. Maecenas quis pellentesque libero. Mauris condimentum feugiat odio at volutpat. Suspendisse ut ante vitae mi aliquet interdum. Vestibulum at egestas lectus, in suscipit nunc. Quisque maximus nulla vitae dui convallis, vel accumsan justo aliquet. Aenean aliquet aliquet quam sed pharetra. Vivamus est risus, volutpat id euismod eu, ultrices sit amet metus. Suspendisse in ultricies ipsum. Maecenas accumsan, neque malesuada dictum mollis, ex lacus varius mi, vel placerat orci nisi in nunc. Ut bibendum sodales dictum. </p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Add to Cart</a>
-    </div>
-
+    <h2>Clothing Line</h2>
+    <form action="cartplace.go">
+    <div class="container">
+        <div class="row">
+            <%
+                List<Products> productList = (List<Products>) request.getAttribute("productList");
+                for (Products product : productList) {
+            %>
+            <div class="card col-lg-4 col-m-3 col-sm-4">
+                <div class="card-body">
+                    <h5 class="card-title"><%= product.getpName() %> Price - $ <%= product.getPrice() %></h5>
+                    <h6 class="card-subtitle mb-2 text-muted">ID - <%= product.getpID() %></h6>
+                    <p class="card-text">Discription - <%= product.getDisc() %></p>
+                    <a href="#" class="card-link">Add to Cart</a>
+                </div>
+            </div>
+            <%
+                }
+            %>
+        </div>
+        <input type="submit" value="Purchase">
+    </form>
 </main>
 <footer>
 

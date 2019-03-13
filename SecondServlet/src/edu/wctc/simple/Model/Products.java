@@ -1,14 +1,23 @@
-package edu.wctc.simple;
+package edu.wctc.simple.Model;
 
 public class Products {
     private String pName, disc;
     private double price;
-    public Products(String pName, String disc, double price){
+    private int pID;
+    public Products(int id, String pName, String disc, double price){
+        this.pID = id;
         this.pName = pName;
         this.disc = disc;
         this.price = price;
     }
 
+    public int getpID(){
+        return pID;
+    }
+
+    public void setpID(int id){
+        this.pID = id;
+    }
     public String getpName() {
         return pName;
     }
