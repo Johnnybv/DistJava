@@ -1,3 +1,5 @@
+package edu.wctc.simple.Model;
+
 import java.sql.*;
 
 public class CreateShopDB {
@@ -59,11 +61,11 @@ public class CreateShopDB {
             Statement stmt = conn.createStatement();
 
             stmt.execute("Create table Cart"
-            + "( CartID INT NOT NULL PRIMARY KEY ,"
-            + "  ProductID INT NOT NULL,"
-            + "  ProductName VARCHAR (100),"
-            + "  ProductDisc VARCHAR (200),"
-            + "  Price DOUBLE )");
+                    + "( CartID INT NOT NULL PRIMARY KEY ,"
+                    + "  ProductID INT NOT NULL,"
+                    + "  ProductName VARCHAR (100),"
+                    + "  ProductDisc VARCHAR (200),"
+                    + "  Price DOUBLE )");
 
             System.out.println("Cart Table Created.");
         }catch (SQLException ex){
@@ -99,3 +101,4 @@ public class CreateShopDB {
 
     }
 }
+

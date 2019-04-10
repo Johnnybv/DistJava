@@ -1,9 +1,16 @@
+package edu.wctc.simple.Model;
+
+import java.awt.*;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ShopDBAction {
-    public static void outputProducts(String DB){
+    public static List<Products> outputProducts(String DB){
         Statement stmt = null;
         Connection conn = null;
+        List<Products> stuff = new ArrayList<>();
+
         try{
             conn = DriverManager.getConnection(DB);
             stmt = conn.createStatement();
@@ -11,20 +18,14 @@ public class ShopDBAction {
             sql = "SELECT ProductID, ProductName, ProductDisc, Price FROM Products";
             ResultSet rs = stmt.executeQuery(sql);
 
-            System.out.println("ProductID - ProductName - Price");
-            System.out.println("Product Description");
-            System.out.println("_____________________________________________");
-
             while (rs.next()){
                 int id = rs.getInt("ProductID");
                 String name = rs.getString("ProductName");
                 String disc = rs.getString("ProductDisc");
                 double price = rs.getDouble("Price");
 
-                System.out.println(id + " - " + name + " - " + price);
-                System.out.println(disc);
+                stuff.add(new Products(id, name, disc, price));
             }
-
             rs.close();
             stmt.close();
             conn.close();
@@ -48,8 +49,9 @@ public class ShopDBAction {
                 se.printStackTrace();
             }
         }
-
+        return stuff;
     }
+
     static int counter = 1;
     public static void addToCart(String DB, int Cid){
         Statement stmt = null;
@@ -103,6 +105,8 @@ public class ShopDBAction {
     public static void outputCart(String DB){
         Statement stmt = null;
         Connection conn = null;
+        List<Products> stuff = new ArrayList<>();
+
         try{
             conn = DriverManager.getConnection(DB);
             stmt = conn.createStatement();
