@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b82b1478-53bb-4250-9027-3ce21c42b851" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/CreateShopDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/ProductsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/ShopDBAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SecondServlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SecondServlet/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SecondServlet/src/edu/wctc/simple/Model/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/JAX_WS_Glassfish___JAX_WS_2_2_RI___Metro_1_X___JWSDP_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShopDBJE/CreateShopDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopDBJE/CreateShopDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShopDBJE/MenuDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopDBJE/MenuDB.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ShopDBJE/ShopDBAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ShopDBJE/ShopDBAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CreateShopDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CreateShopDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShopDBAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShopDBAction.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/CreateShopDB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="74" column="59" lean-forward="true" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+            <state relative-caret-position="1258">
+              <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -54,7 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/MenuDB.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="50" />
+              <caret line="6" column="42" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,7 +52,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -74,8 +60,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ShopDBAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="553">
-              <caret line="137" column="18" lean-forward="true" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+            <state relative-caret-position="2329">
+              <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -183,16 +169,18 @@
       <workItem from="1553704753920" duration="9589000" />
       <workItem from="1553728330059" duration="1719000" />
       <workItem from="1554915862014" duration="4067000" />
+      <workItem from="1555520772115" duration="332000" />
+      <workItem from="1555522028748" duration="416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15375000" />
+    <option name="totallyTimeSpent" value="16123000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.27680525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2833698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -263,31 +251,31 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ShopDBActions.java" />
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/CreateShopDB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="1258">
+          <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/CreateShopDB.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="74" column="59" lean-forward="true" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ShopDBAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="137" column="18" lean-forward="true" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
+        <state relative-caret-position="2329">
+          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MenuDB.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="42" lean-forward="true" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="50" />
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -2,6 +2,7 @@ package edu.wctc.simple.Controller;
 
 import edu.wctc.simple.Model.Inventory;
 import edu.wctc.simple.Model.Products;
+import edu.wctc.simple.Model.ProductsDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -20,7 +21,8 @@ public class ProductController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
 
-        List<Products> productList = Inventory.getProducts();
+        ProductsDao inventory = new Inventory();
+        List<Products> productList = inventory.getAllProducts();
 
         request.setAttribute("productList", productList);
 
