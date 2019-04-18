@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Products</h1>
+
+<span id="stuff"></span>
+
+<script>
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            var myObj = JSON.parse(this.responseText);
+            var content = "<table>";
+            for (var property in myObj) {
+                if (myObj.hasOwnProperty(property)) {
+                    content += "<tr><td>" + myObj[property].pID +
+                        "</td><td>" + myObj[property].pName + "</td><td>"
+                        + myObj[property].disc + "</td><td>"
+                        + myObj[property].price+ "</td></tr>";
+                }
+            }
+            content += "</table>"
+            document.getElementById("stuff").innerHTML = content;
+        }
+    };
+    xmlhttp.open("GET", "/products", true);
+    xmlhttp.send();
+</script>
+</body>
+</html>
